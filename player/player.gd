@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var movespeed = 150
+var movespeed = 300
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -8,11 +8,10 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	if Input.is_action_pressed("left"):
-		velocity.x = -movespeed
-	elif Input.is_action_pressed("right"):
-		velocity.x = movespeed
+func _process(_delta):
+	var direction := Input.get_axis("ui_left", "ui_right")
+	if direction:
+		velocity.x = direction * movespeed
 	else:
-		velocity.x = 0
+		velocity.x = move_toward(velocity.x, 0, movespeed)
 	move_and_slide()
