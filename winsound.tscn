@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnxs23rmkkgxw"]
+
+[ext_resource type="AudioStream" uid="uid://b214i4eh13tb1" path="res://sfx/win.mp3" id="1_3vr70"]
+
+[node name="Winsound" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_3vr70")
