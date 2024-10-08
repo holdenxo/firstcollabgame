@@ -2,7 +2,11 @@
 
 importer="mp3"
 type="AudioStreamMP3"
+<<<<<<< HEAD
 uid="uid://ba3uvlfomb18g"
+=======
+uid="uid://cr7rnhjqepeaq"
+>>>>>>> 23eeb326799e369214142912cc7a51f8b6b0162d
 path="res://.godot/imported/slotmachinespinning.mp3-1f971c9d97543b651558261df8014982.mp3str"
 
 [deps]
