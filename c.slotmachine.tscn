@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://d0b26xmgg5r03"]
+[gd_scene load_steps=2 format=3 uid="uid://d0b26xmgg5r03"]
+
+[ext_resource type="Texture2D" uid="uid://chkh7kns18hnk" path="res://373831079-5ecc2344-5652-4da5-9f84-ab185255e360.png" id="1_t7rvd"]
 
 [node name="slotmachine" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_t7rvd")
+
+[node name="Area2D" type="Area2D" parent="."]
