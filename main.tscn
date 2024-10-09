@@ -4,10 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://dyyhdhthtts4u" path="res://player/player.tscn" id="1_t42xo"]
 [ext_resource type="PackedScene" uid="uid://c01lfjl7ftefd" path="res://spawner/spawner.tscn" id="2_lgh37"]
 [ext_resource type="PackedScene" uid="uid://c7c6lj58wu2nu" path="res://scoreboard/scoreboard.tscn" id="3_4scfy"]
-[ext_resource type="PackedScene" uid="uid://bdxyvh3bdujx2" path="res://items/slots.tscn" id="4_fddpp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d4ck0"]
 size = Vector2(300, 1575)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rybca"]
+size = Vector2(496.546, 176.861)
 
 [node name="Main" type="Node2D"]
 
@@ -16,13 +18,13 @@ position = Vector2(675, 921)
 scale = Vector2(1.14355, 1.3444)
 texture = ExtResource("1_rotvh")
 
-[node name="player" parent="." instance=ExtResource("1_t42xo")]
-position = Vector2(66, 1734)
-
 [node name="spawner" parent="." instance=ExtResource("2_lgh37")]
 position = Vector2(539, -39)
 
 [node name="scoreboard" parent="." instance=ExtResource("3_4scfy")]
+
+[node name="player" parent="." instance=ExtResource("1_t42xo")]
+position = Vector2(66, 1734)
 
 [node name="moveright" type="TouchScreenButton" parent="."]
 position = Vector2(930, 788)
@@ -34,6 +36,28 @@ position = Vector2(152, 790)
 shape = SubResource("RectangleShape2D_d4ck0")
 action = "left"
 
-[node name="Item" parent="." instance=ExtResource("4_fddpp")]
-rewards = "100: 0.5
--100: 0.5"
+[node name="Hopper1" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hopper1"]
+position = Vector2(128, 305)
+rotation = 0.538972
+shape = SubResource("RectangleShape2D_rybca")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Hopper1"]
+position = Vector2(-102, 113)
+rotation = 1.37782
+shape = SubResource("RectangleShape2D_rybca")
+
+[node name="Hopper2" type="StaticBody2D" parent="."]
+position = Vector2(1237, 318)
+rotation = 2.14941
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hopper2"]
+position = Vector2(176.549, 250.175)
+rotation = 0.538972
+shape = SubResource("RectangleShape2D_rybca")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Hopper2"]
+position = Vector2(-84.0555, 149.264)
+rotation = -0.311768
+shape = SubResource("RectangleShape2D_rybca")

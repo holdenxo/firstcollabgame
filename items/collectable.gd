@@ -1,17 +1,15 @@
-extends Area2D
+extends RigidBody2D
 
 @export_multiline var rewards = "100: 0.5\n-100: 0.5"
-@export var dropspeed = 5
 @onready var sound_scene = preload("res://winsound.tscn")
 var rewards_dict: Dictionary = {}
 
 func _ready() -> void:
 	parse_rewards()
 
-func _process(_delta):
-	position.y += dropspeed
-
-func _on_body_entered(_body):	
+func _on_body_entered(body):	
+	if !body.is_in_group("player"):
+		return
 	var root = get_tree().root
 	root.get_node("Main/scoreboard").score += get_random_reward()
 	

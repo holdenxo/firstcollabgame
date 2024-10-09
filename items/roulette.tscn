@@ -3,10 +3,14 @@
 [ext_resource type="Script" path="res://items/collectable.gd" id="1_yaauf"]
 [ext_resource type="Texture2D" uid="uid://betayc6lp6c0h" path="res://images/roulette-v3.png" id="2_mus2h"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5daiu"]
-size = Vector2(50, 46)
+[sub_resource type="CircleShape2D" id="CircleShape2D_6614j"]
+radius = 29.5042
 
-[node name="Roulette" type="Area2D"]
+[node name="Roulette" type="RigidBody2D"]
+mass = 3.0
+gravity_scale = 3.0
+contact_monitor = true
+max_contacts_reported = 1
 script = ExtResource("1_yaauf")
 rewards = "1000: 0.15
 -1000: 0.85"
@@ -19,6 +23,6 @@ texture = ExtResource("2_mus2h")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1)
 scale = Vector2(2, 2)
-shape = SubResource("RectangleShape2D_5daiu")
+shape = SubResource("CircleShape2D_6614j")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

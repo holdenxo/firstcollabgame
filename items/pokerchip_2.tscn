@@ -6,7 +6,11 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_vwekl"]
 radius = 21.5928
 
-[node name="pokerchip_2" type="Area2D"]
+[node name="Pokerchip_2" type="RigidBody2D"]
+mass = 1.5
+gravity_scale = 1.5
+contact_monitor = true
+max_contacts_reported = 1
 script = ExtResource("1_b66oq")
 rewards = "2: 1.0"
 

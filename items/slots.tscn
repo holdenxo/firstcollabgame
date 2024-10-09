@@ -1,12 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://bdxyvh3bdujx2"]
+[gd_scene load_steps=4 format=3 uid="uid://ngd7o8gx73tp"]
 
 [ext_resource type="Script" path="res://items/collectable.gd" id="1_0yvg7"]
 [ext_resource type="Texture2D" uid="uid://c0bfkyjik0pak" path="res://images/slotmachine-v2.png" id="2_4eejr"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5daiu"]
-size = Vector2(74, 46)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dy8v6"]
+radius = 21.4924
+height = 83.0
 
-[node name="Slots" type="Area2D"]
+[node name="Slots" type="RigidBody2D"]
+mass = 3.5
+gravity_scale = 3.5
+contact_monitor = true
+max_contacts_reported = 1
 script = ExtResource("1_0yvg7")
 rewards = "10000: 0.1
 -1000: 0.7
@@ -19,8 +24,9 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_4eejr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 1)
+position = Vector2(0, 1)
+rotation = 1.55875
 scale = Vector2(2, 2)
-shape = SubResource("RectangleShape2D_5daiu")
+shape = SubResource("CapsuleShape2D_dy8v6")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
