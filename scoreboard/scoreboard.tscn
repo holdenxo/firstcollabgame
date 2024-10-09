@@ -30,6 +30,7 @@ theme_override_fonts/font = ExtResource("2_ww8tq")
 text = "Slots & Roulette give you a random score, have fun gambling!"
 
 [node name="Label2" type="Label" parent="."]
+layout_mode = 0
 offset_left = 5.0
 offset_top = 1023.0
 offset_right = 1071.0
