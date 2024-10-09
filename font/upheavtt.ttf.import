@@ -2,11 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-<<<<<<< HEAD
-uid="uid://cky06x31nbcso"
-=======
-uid="uid://du3b8ygwfwj5a"
->>>>>>> 23eeb326799e369214142912cc7a51f8b6b0162d
+uid="uid://rulbdnnegu22"
 path="res://.godot/imported/upheavtt.ttf-9a19284502059212ce0dc70f3d5336cd.fontdata"
 
 [deps]
@@ -19,10 +15,7 @@ dest_files=["res://.godot/imported/upheavtt.ttf-9a19284502059212ce0dc70f3d5336cd
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
-<<<<<<< HEAD
-=======
 disable_embedded_bitmaps=true
->>>>>>> 23eeb326799e369214142912cc7a51f8b6b0162d
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48

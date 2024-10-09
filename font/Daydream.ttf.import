@@ -2,11 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-<<<<<<< HEAD
-uid="uid://cohw0ib28eh1a"
-=======
-uid="uid://ohcbpekkk2l1"
->>>>>>> 23eeb326799e369214142912cc7a51f8b6b0162d
+uid="uid://cs5nx8hv01uvl"
 path="res://.godot/imported/Daydream.ttf-4efe995520cb028fd34eb4e018862252.fontdata"
 
 [deps]
@@ -19,10 +15,7 @@ dest_files=["res://.godot/imported/Daydream.ttf-4efe995520cb028fd34eb4e018862252
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
-<<<<<<< HEAD
-=======
 disable_embedded_bitmaps=true
->>>>>>> 23eeb326799e369214142912cc7a51f8b6b0162d
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48

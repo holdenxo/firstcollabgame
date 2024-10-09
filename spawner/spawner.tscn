@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" path="res://spawner/spawner.gd" id="1_6hdro"]
 
-
 [node name="spawner" type="Node2D"]
 script = ExtResource("1_6hdro")
 

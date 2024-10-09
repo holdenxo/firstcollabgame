@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c7c6lj58wu2nu"]
+[gd_scene load_steps=3 format=3 uid="uid://c7c6lj58wu2nu"]
 
 [ext_resource type="Script" path="res://scoreboard/scoreboard.gd" id="1_cw0si"]
+[ext_resource type="FontFile" uid="uid://cs5nx8hv01uvl" path="res://font/Daydream.ttf" id="2_ww8tq"]
 
 [node name="scoreboard" type="Control"]
 layout_mode = 3
@@ -12,9 +13,27 @@ script = ExtResource("1_cw0si")
 
 [node name="scoretext" type="Label" parent="."]
 layout_mode = 0
-offset_left = 9.0
-offset_top = 1765.0
-offset_right = 1086.0
-offset_bottom = 1914.0
-theme_override_font_sizes/font_size = 126
+offset_top = 4.0
+offset_right = 1077.0
+offset_bottom = 153.0
+theme_override_fonts/font = ExtResource("2_ww8tq")
+theme_override_font_sizes/font_size = 70
 text = "Score"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 100.0
+offset_right = 877.0
+offset_bottom = 123.0
+theme_override_fonts/font = ExtResource("2_ww8tq")
+text = "Slots & Roulette give you a random score, have fun gambling!"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 5.0
+offset_top = 1023.0
+offset_right = 1071.0
+offset_bottom = 1064.0
+theme_override_fonts/font = ExtResource("2_ww8tq")
+theme_override_font_sizes/font_size = 30
+text = "<-                                                                                                                   ->"
