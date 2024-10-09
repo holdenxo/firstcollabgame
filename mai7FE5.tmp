@@ -37,3 +37,4 @@ action = "left"
 [node name="Item" parent="." instance=ExtResource("4_fddpp")]
 rewards = "100: 0.5
 -100: 0.5"
+dropspeed = 5

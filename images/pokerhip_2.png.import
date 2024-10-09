@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwndsqyguq51o"
-path="res://.godot/imported/pokerhip.2.png-7f260eb3712d1347157846e0ba061533.ctex"
+path="res://.godot/imported/pokerhip_2.png-bc1b6ca39f387538c95148e82f0efa23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pokerhip.2.png"
-dest_files=["res://.godot/imported/pokerhip.2.png-7f260eb3712d1347157846e0ba061533.ctex"]
+source_file="res://images/pokerhip_2.png"
+dest_files=["res://.godot/imported/pokerhip_2.png-bc1b6ca39f387538c95148e82f0efa23.ctex"]
 
 [params]
 

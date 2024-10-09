@@ -1,10 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://d0b26xmgg5r03"]
+[gd_scene load_steps=2 format=3 uid="uid://bqmmsri73605f"]
 
-[ext_resource type="Texture2D" uid="uid://chkh7kns18hnk" path="res://373831079-5ecc2344-5652-4da5-9f84-ab185255e360.png" id="1_t7rvd"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1v8kd"]
+load_path = "res://.godot/imported/373831079-5ecc2344-5652-4da5-9f84-ab185255e360.png-30c6bf55a3aa0cade069418bdd35e3d8.ctex"
 
 [node name="slotmachine" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_t7rvd")
+texture = SubResource("CompressedTexture2D_1v8kd")
 
 [node name="Area2D" type="Area2D" parent="."]

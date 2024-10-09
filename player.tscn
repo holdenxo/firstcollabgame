@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://player/player.gd" id="1_r3paj"]
 [ext_resource type="Texture2D" uid="uid://cj3oyylgk6ejp" path="res://icon.svg" id="2_stlvx"]
 
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iwtph"]
 size = Vector2(126, 127)
 

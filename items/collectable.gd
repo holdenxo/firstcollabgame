@@ -11,7 +11,7 @@ func _ready() -> void:
 func _process(_delta):
 	position.y += dropspeed
 
-func _on_body_entered(_body):
+func _on_body_entered(_body):	
 	var root = get_tree().root
 	root.get_node("Main/scoreboard").score += get_random_reward()
 	

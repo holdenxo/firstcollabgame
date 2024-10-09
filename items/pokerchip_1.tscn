@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://cyen6ama0704v"]
+
+[ext_resource type="Script" path="res://items/collectable.gd" id="1_it0fa"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sfbkv"]
+load_path = "res://.godot/imported/pokerchip.1.png-0f1316a216061f50eda7113fdd0a1f41.ctex"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_a22f5"]
+radius = 21.6449
+
+[node name="pokerchip_1" type="Area2D"]
+script = ExtResource("1_it0fa")
+rewards = "1: 1.0"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 1)
+scale = Vector2(0.5, 0.5)
+texture = SubResource("CompressedTexture2D_sfbkv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_a22f5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

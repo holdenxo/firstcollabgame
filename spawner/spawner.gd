@@ -1,6 +1,6 @@
 extends Node2D
 
-var collectables = [preload("res://items/slots.tscn"), preload("res://items/roulette.tscn")]
+var collectables = [preload("res://items/slots.tscn"), preload("res://items/roulette.tscn"), preload("res://items/pokerchip_1.tscn"), preload("res://items/pokerchip_2.tscn")]
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
