@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bhfc3drrft6ob"]
 
 [ext_resource type="Script" path="res://items/collectable.gd" id="1_it0fa"]
-[ext_resource type="Texture2D" uid="uid://dldewwn81o6s3" path="res://images/pokerchip_1.png" id="2_72qp5"]
+[ext_resource type="Texture2D" uid="uid://3njbhhd3daog" path="res://images/pokerchip_1_v2.png" id="2_2wbjs"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vwekl"]
 radius = 21.5928
@@ -15,7 +15,7 @@ rewards = "1: 1.0"
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 1)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_72qp5")
+texture = ExtResource("2_2wbjs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1)

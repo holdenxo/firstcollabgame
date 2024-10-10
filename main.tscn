@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c7c6lj58wu2nu" path="res://scoreboard/scoreboard.tscn" id="3_4scfy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d4ck0"]
-size = Vector2(300, 1575)
+size = Vector2(500, 1575)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rybca"]
 size = Vector2(496.546, 176.861)
@@ -27,12 +27,12 @@ position = Vector2(539, -39)
 position = Vector2(66, 1734)
 
 [node name="moveright" type="TouchScreenButton" parent="."]
-position = Vector2(930, 788)
+position = Vector2(831, 883)
 shape = SubResource("RectangleShape2D_d4ck0")
 action = "right"
 
 [node name="moveleft" type="TouchScreenButton" parent="."]
-position = Vector2(152, 790)
+position = Vector2(245, 882)
 shape = SubResource("RectangleShape2D_d4ck0")
 action = "left"
 
