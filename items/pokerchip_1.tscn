@@ -10,7 +10,8 @@ radius = 21.5928
 contact_monitor = true
 max_contacts_reported = 1
 script = ExtResource("1_it0fa")
-rewards = "1: 1.0"
+rewards = "10: 0.99
+15: 0.01"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 1)

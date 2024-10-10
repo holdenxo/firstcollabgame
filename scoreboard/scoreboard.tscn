@@ -24,17 +24,19 @@ text = "Score"
 layout_mode = 0
 offset_left = 1.0
 offset_top = 100.0
-offset_right = 877.0
-offset_bottom = 123.0
+offset_right = 1011.0
+offset_bottom = 175.0
 theme_override_fonts/font = ExtResource("2_ww8tq")
-text = "Slots & Roulette give you a random score, have fun gambling!"
+theme_override_font_sizes/font_size = 27
+text = "Slots & Roulette give you a random score, 
+have fun gambling!"
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 0
 offset_left = 5.0
-offset_top = 1023.0
+offset_top = 192.0
 offset_right = 1071.0
-offset_bottom = 1064.0
+offset_bottom = 233.0
 theme_override_fonts/font = ExtResource("2_ww8tq")
-theme_override_font_sizes/font_size = 30
-text = "<-                                                                                                                   ->"
+theme_override_font_sizes/font_size = 28
+text = "move by tapping either side of the screen!"

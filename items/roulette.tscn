@@ -12,8 +12,8 @@ gravity_scale = 3.0
 contact_monitor = true
 max_contacts_reported = 1
 script = ExtResource("1_yaauf")
-rewards = "1000: 0.15
--1000: 0.85"
+rewards = "100: 0.15
+-100: 0.85"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 1)
