@@ -4,8 +4,12 @@ extends RigidBody2D
 @onready var sound_scene = preload("res://winsound.tscn")
 var rewards_dict: Dictionary = {}
 
-func _ready() -> void:
+func _ready():
 	parse_rewards()
+
+func _process(_delta):
+	if position.y > 2000:
+		queue_free()
 
 func _on_body_entered(body):	
 	if !body.is_in_group("player"):
@@ -19,7 +23,7 @@ func _on_body_entered(body):
 	
 	queue_free()
 
-func parse_rewards() -> void:
+func parse_rewards():
 	for line in rewards.split("\n"):
 		var parts = line.split(":")
 		if parts.size() == 2:
