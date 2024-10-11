@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://mduoadaahvjq" path="res://images/hopper-v2.png" id="5_p4uej"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d4ck0"]
-size = Vector2(300, 1575)
+size = Vector2(550, 1575)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rybca"]
 size = Vector2(496.546, 176.861)
@@ -22,18 +22,18 @@ texture = ExtResource("1_rotvh")
 [node name="spawner" parent="." instance=ExtResource("2_lgh37")]
 position = Vector2(539, -39)
 
-[node name="scoreboard" parent="." instance=ExtResource("3_4scfy")]
-
 [node name="player" parent="." instance=ExtResource("1_t42xo")]
 position = Vector2(66, 1734)
 
 [node name="moveright" type="TouchScreenButton" parent="."]
-position = Vector2(930, 788)
+position = Vector2(825, 788)
+scale = Vector2(1, 1.48)
 shape = SubResource("RectangleShape2D_d4ck0")
 action = "right"
 
 [node name="moveleft" type="TouchScreenButton" parent="."]
-position = Vector2(152, 790)
+position = Vector2(251, 790)
+scale = Vector2(1, 1.52)
 shape = SubResource("RectangleShape2D_d4ck0")
 action = "left"
 
@@ -74,3 +74,5 @@ position = Vector2(3.95052, 229.138)
 rotation = 0.987647
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("5_p4uej")
+
+[node name="scoreboard" parent="." instance=ExtResource("3_4scfy")]
